@@ -3,7 +3,9 @@ Thermal Image Processing Script
 What this script does:
 
 1.Converts thermal images to colorized versions using colormaps
+
 2.Enhances image resolution using AI (EDSR model) or traditional upscaling
+
 3.Organizes results into easy-to-find folders
 
 How to install:
@@ -11,10 +13,15 @@ How to install:
 Check "Add Python to PATH" during installation
 2. Check if installed: Press Win+R, type cmd, press enter, then type python --version
 3. Install Required Libraries, open cmd again and paste these commands one by one:
+
 pip install numpy
+
 pip install opencv-contrib-python-headless
+
 pip install matplotlib
+
 pip install tqdm
+
 pip install infiray-irg 
 
 How to use:
@@ -22,10 +29,16 @@ Open a config.json file in the same folder as the script, then:
 1. input_dir: type path to folder with your .irg files
 2. output_dir: type path where processed images will be saved
 3. model_path: type path to EDSR model (in the same folder as the script, "EDSR_x4.pb")
-4. colormap_name: type the color style (try: "viridis", "plasma", "magma", or run all_colormaps.py to see full list of possible colormaps
+4. colormap_name: type the color style (try: "viridis", "plasma", "magma", or run all_colormaps.pdf to have a look at the list of possible colormaps
 5. scale_factor: 4 by default, but can be changed to 2 or 3, but required correct EDSR version, which you can find via internet
 
 Keep in mind: use only Latin characters in path names, Cyrilic will cause a critical error! Also do not use backslashes in path names, forward slashes required!
+
+Then run RunRender+Upscale.py
+
+Enjoy!
+
+------------------------------------
 
 Common errors and solutions:
 1.ModuleNotFoundError: No module named 'infiray_irg'
