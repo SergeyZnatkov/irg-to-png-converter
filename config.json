@@ -1,0 +1,7 @@
+{
+    "input_dir": "C:/your directory/raw thermal",
+    "output_dir": "C:/your directory/Desktop",
+    "model_path": "C:/your directory/EDSR_x4.pb",
+    "colormap_name": "plasma",
+    "scale_factor": 4
+}
